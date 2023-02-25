@@ -1,3 +1,7 @@
+//Please note that this code is still a work-in-progress, and updates/ deletions will definitely be made
+
+
+
 #include <stdio.h>
 #define MAXLETTER 26
 #define MAXNUMBER 10
