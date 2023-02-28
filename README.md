@@ -1,6 +1,7 @@
 # My-solutions-to-exercises-in-the-K-R-book-on-C
 
-This repository contains my solutions to some of the programming execrises in Dennis Ritchie & Brian Kernighan's   '<b><i>The C Programming Language 2nd ed'</i>.
+This repository contains my solutions to some of the programming execrises in Dennis Ritchie & Brian Kernighan's   '<b><i>The C Programming Language 2nd ed'</i></b>.
+I will be updating this repository over the next few months as I cover the chapters of the book.
 
 Unlike other solutions I have seen so far, mine are done based on the 'current' level of knowledge. 
 That means if a discussion on pointers is not done in the book till chapter 5 of the textbook, then I do not apply pointers when writing solutions to the exercises in previous chapters (i.e, chapters 1-4).
