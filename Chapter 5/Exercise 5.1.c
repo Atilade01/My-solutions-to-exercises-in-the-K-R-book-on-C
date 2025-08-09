@@ -1,7 +1,7 @@
 /*
 I have written the code below in two forms. The first uses the same functions (getch() and ungetch() )in the K & R  book.
-These functions are provided as part of the conio.h library. They are not provided in stdio.h.
-The second uses the stdio functions getchar() and ungetc(). Note that we could also use getc(FILE *) instead of getchar() if we prefer.
+These functions are provided as part of the conio.h library. They are not provided in stdio.h. Hence, they are not portable.
+The second uses the stdio functions getchar() and ungetc(). Note that we could also use getc(FILE *) instead of getchar()
 */
 
 /* VERSION 1 */
@@ -47,7 +47,7 @@ int getint(int *pn)
     if (c == '+' || c == '-')
     {
         c = getch();
-        if(!isdigit(c))
+        if(!isdigit(c) || c != EOF)  /* if c is neither a digit nor the end of file, then send it back to input */
         {
             ungetch(c);
             return 0;
