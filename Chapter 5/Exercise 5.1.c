@@ -93,9 +93,8 @@ int getint(int *pn)
     sign = (c == '-') ? -1 : 1;
     if (c == '+' || c == '-')
     {
-        c = getchar();
-        // the above could also be written as c = getc(stdin)
-        if(!isdigit(c))
+        c = getchar(); // the above could also be written as c = getc(stdin)
+        if(!isdigit(c) || c != EOF)  /* if c is neither a digit nor the end of file, then send it back to input */
         {
             ungetc(c,stdin);
             return 0;
