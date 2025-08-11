@@ -30,11 +30,11 @@ int day_of_year(int year, int month, int day)
     for (i = 1; i < month; i++)
         //day += daytab[leap][i]; commenting out the original K & R code
         day += *(*(daytab + leap) + i);
-        printf("\nDay is %d",*(*(daytab + leap) + i));
+        //printf("\nDay is %d",*(*(daytab + leap) + i));
   
         /* Note that:
-        daytab[leap] is equivalent to *(daytab + leap)
-        which is the address of the string constant that daytab[leap] points to,
+        Because we are dealing with 2D arrays, daytab[leap] is equivalent to *(daytab + leap)
+        which is a pointer to the address of daytab[leap],
         in this case the address of the 0th element.
         To point to the next address of the same string constant,
         we must increment; i.e (daytab[leap] + i) OR *(daytab + leap) + i.
