@@ -8,7 +8,10 @@ int main()
     int dayOfYear, month, day;
   
     dayOfYear = day_of_year(2024,4,12);
-    
+
+    /* We are intentionally leaving the printf() function below as is 
+    without checking the returned value(s) from the called function -– day_of_year().
+    In your own code, please check the returned value and act accordingly! */
     printf("\nDay of year is: %d\n",dayOfYear);
     month_day(2024,dayOfYear,&month,&day);
 
@@ -38,13 +41,13 @@ int day_of_year(int year, int month, int day)
         else
         { 
             printf("ERROR: Day cannot be %d", day);
-            return;
+            return -1;
         }
     }
     else 
     { 
         printf("ERROR: Month cannot be %d", month);
-        return;
+        return -1;
     }
     
 }
