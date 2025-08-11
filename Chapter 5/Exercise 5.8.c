@@ -9,7 +9,7 @@ int main()
   
     dayOfYear = day_of_year(2024,4,12);
 
-    /* We are intentionally leaving the printf() function below as is 
+    /* I am intentionally leaving the printf() function below as is 
     without checking the returned value(s) from the called function -– day_of_year().
     In your own code, please check the returned value and act accordingly! */
     printf("\nDay of year is: %d\n",dayOfYear);
