@@ -1,7 +1,7 @@
 /*
 I have written the code below in two forms. The first uses the same functions (getch() and ungetch() )in the K & R  book.
 These functions are provided as part of the conio.h library. They are not provided in stdio.h. Hence, they are not portable.
-The second uses the stdio functions getchar() and ungetc(). Note that we could also use getc(FILE *) instead of getchar()
+The second uses the stdio functions getchar() and ungetc().
 */
 
 /* VERSION 1 */
