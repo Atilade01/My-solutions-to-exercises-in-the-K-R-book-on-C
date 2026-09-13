@@ -5,8 +5,7 @@
 */
 
 /* Below, I show two ways to write strcat. I used different names
- * for strcat. They are sstrcat and _strcat_. I do this so that they don't clash
- * with libray names. The _strcat_ version is better to use */
+ * for strcat. They are sstrcat and _strcat_. */
 
 void sstrcat(char* s, char* t);
 void _strcat_(char* s, char* t);
@@ -26,10 +25,7 @@ void sstrcat(char* s, char* t)
     while(*s++ != '\0')
         ;
     if(*s == '\0')
-    {
-        s--; //pushing the pointer back
-        *s++ = ' '; //I added a space so the 2 strings won't be muddled up
-    }
+    { *s++ = ' '; }
     while((*s++ = *t++))
     {;}
 }
